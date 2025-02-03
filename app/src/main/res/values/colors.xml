@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="filled_star_color">#FFD700</color> <!-- Gold color for filled stars -->
+    <color name="unfilled_star_color">#D3D3D3</color> <!-- Light gray color for unfilled stars -->
+</resources>

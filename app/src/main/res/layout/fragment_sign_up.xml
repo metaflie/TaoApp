@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradiant_background_gray"
+    android:gravity="center"
+    android:padding="20dp"
+    tools:context=".SignUpFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_owlLogo_SignUp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_owl"/>
+
+        <TextView
+            android:id="@+id/tw_signUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="5dp"
+            android:text="Sign Up"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="30sp"/>
+
+        <EditText
+            android:id="@+id/et_firstName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="25dp"
+            android:hint="First Name"
+            android:textSize="20sp"
+            android:background="@drawable/rounded_corner"
+            android:padding="12dp"
+            android:inputType="text"
+            android:elevation="5dp"/>
+
+        <EditText
+            android:id="@+id/et_lastName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+            android:hint="Last Name"
+            android:textSize="20sp"
+            android:background="@drawable/rounded_corner"
+            android:padding="12dp"
+            android:inputType="text"
+            android:elevation="5dp"/>
+
+        <EditText
+            android:id="@+id/et_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+            android:hint="Email"
+            android:textSize="20sp"
+            android:background="@drawable/rounded_corner"
+            android:padding="12dp"
+            android:inputType="textEmailAddress"
+            android:elevation="5dp"/>
+
+        <EditText
+            android:id="@+id/et_password_SignUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+            android:hint="Password"
+            android:textSize="20sp"
+            android:background="@drawable/rounded_corner"
+            android:padding="12dp"
+            android:inputType="textPassword"
+            android:elevation="5dp"/>
+
+        <EditText
+            android:id="@+id/et_passwordConfirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+            android:hint="Confirm Password"
+            android:textSize="20sp"
+            android:background="@drawable/rounded_corner"
+            android:padding="12dp"
+            android:inputType="textPassword"
+            android:elevation="5dp"/>
+
+        <Button
+            android:id="@+id/createAccount_btn_SignUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#3B76C3"
+            android:text="Create Account"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:padding="14dp"/>
+
+        <TextView
+            android:id="@+id/tw_continueWith_SignUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="30dp"
+            android:text="Continue With"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="20dp"/>
+        
+        <LinearLayout
+            android:id="@+id/continueWith_SignUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <ImageButton
+                android:id="@+id/google_btn_SignUp"
+                android:layout_width="0dp"
+                android:layout_height="64dp"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:layout_margin="5dp"
+                android:elevation="5dp"
+                android:src="@drawable/ic_google"
+                android:scaleType="fitCenter"
+                android:background="@drawable/rounded_corner"
+                android:contentDescription="Sign up with Google"/>
+
+            <ImageButton
+                android:id="@+id/facebook_btn_SignUp"
+                android:layout_width="0dp"
+                android:layout_height="64dp"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:layout_margin="5dp"
+                android:elevation="5dp"
+                android:src="@drawable/ic_facebook"
+                android:scaleType="fitCenter"
+                android:background="@drawable/rounded_corner"
+                android:contentDescription="Sign up with Facebook"/>
+
+            <ImageButton
+                android:id="@+id/apple_btn_SignUp"
+                android:layout_width="0dp"
+                android:layout_height="64dp"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:layout_margin="5dp"
+                android:elevation="5dp"
+                android:src="@drawable/ic_apple"
+                android:scaleType="fitCenter"
+                android:background="@drawable/rounded_corner"
+                android:contentDescription="Sign up with Apple"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
