@@ -34,7 +34,9 @@ function NotFound() {
 
 export default function App() {
   const { pathname } = useLocation()
-  useEffect(() => window.scrollTo(0, 0), [pathname])
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [pathname])
   const bare = pathname === '/login' || pathname === '/signup'
 
   return (
